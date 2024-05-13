@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theron Joshua</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Theron Joshua</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Theron Joshua</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Joshua Theron profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Theron Joshua</h1>
+        <p class="section__text__p2">Robotic Engineering</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV-Joshua-Theron-2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/joshua-theron'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/LaughingJosh'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> 2021-2024 Robotics Engineering Curriculum (Polytech Dijon) Year 5  <br /> 2019-2021 : Two-year university degree in Technology in Engineering Electronics and Industrial Computing</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionate about technology and electronics, I envision my future 
+              in the field of robotics engineering. My goal is to contribute to 
+              the creation of innovative technologies and push the boundaries of 
+              robotics to shape a future where robots will play a crucial role in 
+              various aspects of everyday life.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title"> Work Experience </h2>
+              <div class="article-container">
+                <div>
+                  <h3>- Six-month ENGINEERING Curriculum internship at University of Udine (February - July 2024) </h3>
+                  <p>Task : Various research projects in the field of underwater robotic equipment</p>
+                </div>
+                <div>
+                  <h3>- Four-month ENGINEERING Curriculum internship at Robot-Coup (April - July 2023)</h3>
+                  <p>Task : Creation of a specifications document for the manufacturing of an electronic board.</p>
+                </div>
+                <div>
+                  <h3>- One-month ENGINEERING Curriculum internship at the robotics research center in Le Creusot (June 2022)                    </h3>
+                  <p>Computer vision project aimed at waste recognition</p>
+                </div>
+                <div>
+                  <h3>- Two-month university degree internship at Cooptek, an electronics engineering company (April to June 2021)               </h3>
+                  <p>Reverse engineering for the design of vacuum machines.</p>
+                </div>
+                <div>
+                  <h3>- Six-week One technical degree internship at Yumain engineering company in Dijon (starting in May and ending in June 2019)</h3>
+                  <p>Development of a data communication system using LoRa technology</p>
+                </div>
+                <div>
+                  <h3>- Seasonal employment at City Hall of Creusot from July to August from 2021 to 2023 </h3>
+                  <p> Sports instructor for children in disadvantaged neighborhoods</p>
+                </div>
+                <div>
+                  <h3>- Seasonal employment at Cora shopping center  from July to August from 2017 to 2020 </h3>
+                  <p>Sales Advisor in computer technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <!-- Première ligne de projets -->
+          <div class="about-containers">
+            <!-- Projet 1 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Exploration Robot for Hostile Environments (ERHE)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/LaughingJosh/Esirem-Robot-Exploration.git'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./assets/Rapport_ERHE.pdf')"
+                >
+                  Report
+                </button>
+              </div>
+            </div>
+            <!-- Projet 2 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Automatic movement of a catamaran to GPS points </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/LaughingJosh/Catamaran-Udine.git'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href=''"
+                >
+                  Documents a venir
+                </button>
+              </div>
+            </div>
+            <!-- Projet 3 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">ROV With OpenROV</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./assets/Rapport_V2.pdf')"
+                >
+                  Report
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/OpenROV'"
+                >
+                  Github Project
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième ligne de projets -->
+          <div class="about-containers">
+            <!-- Projet 4 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-4.jpg"
+                  alt="Project 4"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Pressure sensor on a boat sail</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/LaughingJosh/Pressure-Wiew-Sail.git'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./assets/ProjetSensorBoat.pdf')"
+                >
+                  Report
+                </button>
+              </div>
+            </div>
+            <!-- Projet 5 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-5.png"
+                  alt="Project 5"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Powerful engine bench control unit</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./assets/ProjetBandPuissance.pdf')"
+                >
+                  Report
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://drive.google.com/file/d/1ojVA2Oj2YRv-w1MzwZVZ3sJ8ZtZWcRLN/view?usp=sharing'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <!-- Projet 6 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-6.png"
+                  alt="Project 6"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"> ROV build from scratch (Remotely Operated Underwater Vehicle)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://a360.co/3URybMQ'"
+                >
+                  Fusion 360 3D model project
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href=''"
+                >
+                Documents a venir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Theron.Joshua@outlook.com">Theron.Joshua@outlook.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/LaughingJosh">https://github.com/LaughingJosh</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
